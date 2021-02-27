@@ -19,11 +19,15 @@ def multiplica(frase_1,frase_2):
     vetor_1 = converte_palavra(frase_1)
     vetor_2 = converte_palavra(frase_2)
 
-    # index = 0
-    # while index < len(vetor_1):
-    #     print(index, items[index])
-    #     index += 1
+    result = []
+    index_1 = len(vetor_1) - 1
+    index_2 = len(vetor_2) - 1
+    while index_2 > 0:
 
+        while index_1 > 0:
+            result = vetor_1[index_1] * vetor_2[index_2]
+            index_2 -= 1
+        index_1 -= 1
 
 
 if __name__ == '__main__':
